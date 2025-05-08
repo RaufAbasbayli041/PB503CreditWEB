@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\Kredit \u0130dar\u0259etm\u0259 Sistemi\\CredidSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\kredit \u0130dar\u0259etm\u0259 sistemi\\credidsystem\\credidsystem\\entity\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\entity\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\kredit \u0130dar\u0259etm\u0259 sistemi\\credidsystem\\credidsystem\\entity\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\entity\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\kredit \u0130dar\u0259etm\u0259 sistemi\\credidsystem\\credidsystem\\entity\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\entity\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\Kredit \u0130dar\u0259etm\u0259 Sistemi\\CredidSystem\\CredidSystem\\Entity\\Class.cs",
+              "RelativeDocumentMoniker": "CredidSystem\\Entity\\Class.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\Kredit \u0130dar\u0259etm\u0259 Sistemi\\CredidSystem\\CredidSystem\\Entity\\Class.cs",
+              "RelativeToolTip": "CredidSystem\\Entity\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:57:14.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\Kredit \u0130dar\u0259etm\u0259 Sistemi\\CredidSystem\\CredidSystem\\Entity\\Branch.cs",
+              "RelativeDocumentMoniker": "CredidSystem\\Entity\\Branch.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\Kredit \u0130dar\u0259etm\u0259 Sistemi\\CredidSystem\\CredidSystem\\Entity\\Branch.cs",
+              "RelativeToolTip": "CredidSystem\\Entity\\Branch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:55:40.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Merchant.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\Kredit \u0130dar\u0259etm\u0259 Sistemi\\CredidSystem\\CredidSystem\\Entity\\Merchant.cs",
+              "RelativeDocumentMoniker": "CredidSystem\\Entity\\Merchant.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\Kredit \u0130dar\u0259etm\u0259 Sistemi\\CredidSystem\\CredidSystem\\Entity\\Merchant.cs",
+              "RelativeToolTip": "CredidSystem\\Entity\\Merchant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:54:48.539Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
