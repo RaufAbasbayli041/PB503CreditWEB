@@ -1,8 +1,11 @@
-﻿namespace CredidSystem.Entity
+﻿using CredidSystem.Configurations;
+using Microsoft.EntityFrameworkCore;
+
+namespace CredidSystem.Entity
 {
-    public class Merchant
+    [EntityTypeConfiguration(typeof(MerchantConfigurations))]
+    public class Merchant : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public ICollection<Branch> Branches { get; set; } // Navigation property

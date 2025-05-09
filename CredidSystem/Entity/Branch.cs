@@ -1,13 +1,16 @@
-﻿namespace CredidSystem.Entity
+﻿using CredidSystem.Configurations;
+using Microsoft.EntityFrameworkCore;
+
+namespace CredidSystem.Entity
 {
-    public class Branch
-    {
-        public int Id { get; set; }
+    [EntityTypeConfiguration(typeof(BrancesConfigurations))]
+    public class Branch : BaseEntity
+    {       
         public string Name { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
-        public string Email { get; set; }
         public int MerchantId { get; set; }
         public Merchant Merchant { get; set; } // Navigation property
+        public ICollection<Employee> Employees { get; set; } // Navigation property
     }
 }
