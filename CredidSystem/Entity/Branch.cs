@@ -1,5 +1,6 @@
 ﻿using CredidSystem.Configurations;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace CredidSystem.Entity
 {
@@ -9,8 +10,10 @@ namespace CredidSystem.Entity
         public string Name { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
+        [Required]
         public int MerchantId { get; set; }
         public Merchant Merchant { get; set; } // Navigation property
+
         public ICollection<Employee> Employees { get; set; } // Navigation property
     }
 }

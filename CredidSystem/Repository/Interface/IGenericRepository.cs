@@ -2,7 +2,7 @@
 
 namespace CredidSystem.Repository.Interface
 {
-    public interface IGenericRepository<TEntity> where TEntity : BaseEntity, new()
+    public interface IGenericRepository<TEntity> where TEntity : BaseEntity
     {
         Task<TEntity> CreateAsync(TEntity entity);
         Task<TEntity> Update(TEntity entity);

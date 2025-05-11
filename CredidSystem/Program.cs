@@ -1,4 +1,9 @@
 using CredidSystem.DB;
+using CredidSystem.Profiles;
+using CredidSystem.Repository.Implementation;
+using CredidSystem.Repository.Interface;
+using CredidSystem.Service.Implementation;
+using CredidSystem.Service.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace CredidSystem
@@ -12,8 +17,14 @@ namespace CredidSystem
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<CreditWebDB>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionStringEvr")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionString")));
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            builder.Services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>));
+
+
+            builder.Services.AddAutoMapper(typeof(CustomProfile));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -30,10 +41,15 @@ namespace CredidSystem
             app.UseRouting();
 
             app.UseAuthorization();
+            app.MapControllerRoute(
+               name: "Areas",
+               pattern: "{Area=Admin}/{controller=Home}/{action=Index}/{id?}");
+
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
             app.Run();
         }
