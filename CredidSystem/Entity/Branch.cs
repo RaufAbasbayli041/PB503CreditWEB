@@ -1,5 +1,6 @@
 ﻿using CredidSystem.Configurations;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System.ComponentModel.DataAnnotations;
 
 namespace CredidSystem.Entity
@@ -15,5 +16,8 @@ namespace CredidSystem.Entity
         public Merchant Merchant { get; set; } // Navigation property
 
         public ICollection<Employee> Employees { get; set; } // Navigation property
+        
+        //public int ProductId { get; set; }
+        //public Product Product { get; set; } // Navigation property
     }
 }

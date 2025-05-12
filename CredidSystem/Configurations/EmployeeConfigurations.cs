@@ -16,7 +16,7 @@ namespace CredidSystem.Configurations
             builder.Property(e => e.Salary).IsRequired().HasColumnType("decimal(10,2)");
             builder.HasOne(e => e.Branch)
                    .WithMany(b => b.Employees)
-                   .HasForeignKey(e => e.BranchId);
+                   .HasForeignKey(e => e.BranchId).OnDelete(DeleteBehavior.NoAction);
         }
     }
     

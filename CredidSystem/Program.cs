@@ -1,4 +1,5 @@
 using CredidSystem.DB;
+using CredidSystem.Extensions;
 using CredidSystem.Profiles;
 using CredidSystem.Repository.Implementation;
 using CredidSystem.Repository.Interface;
@@ -17,11 +18,12 @@ namespace CredidSystem
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<CreditWebDB>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionString")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionStringEvr")));
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
-            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            builder.Services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>));
+
+            builder.Services.AddRepositories();
+            builder.Services.AddServices();
 
 
             builder.Services.AddAutoMapper(typeof(CustomProfile));
