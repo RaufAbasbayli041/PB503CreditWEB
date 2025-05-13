@@ -9,8 +9,7 @@ namespace CredidSystem.Profiles
         public CustomProfile()
         {
             CreateMap<MerchantViewModel, Merchant>().ReverseMap();
-
-
+            CreateMap<BranchViewModel, Branch>().ReverseMap();
         }
     }
 }

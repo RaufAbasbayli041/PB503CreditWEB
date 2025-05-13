@@ -1133,3 +1133,4 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\o
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\obj\Debug\net8.0\CredidSystem.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\obj\Debug\net8.0\ref\CredidSystem.dll
 C:\Users\elnur.a\Desktop\Rauf\Visual Studio\ASP.NET MVC\PB503CreditWEB\CredidSystem\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css

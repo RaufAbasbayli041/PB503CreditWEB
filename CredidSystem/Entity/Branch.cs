@@ -17,7 +17,7 @@ namespace CredidSystem.Entity
 
         public ICollection<Employee> Employees { get; set; } // Navigation property
         
-        //public int ProductId { get; set; }
-        //public Product Product { get; set; } // Navigation property
+      
+       // public Product Product { get; set; } // Navigation property
     }
 }

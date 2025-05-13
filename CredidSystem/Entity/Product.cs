@@ -14,8 +14,8 @@ namespace CredidSystem.Entity
         public int CategoryId { get; set; }
         public Category Category { get; set; } // Navigation property
 
-
-     //   public Branch Branch { get; set; }
+        public int BranchId { get; set; } 
+        public Branch Branch { get; set; }
 
         public int LoanId { get; set; }
         public Loan Loan { get; set; } // Navigation property

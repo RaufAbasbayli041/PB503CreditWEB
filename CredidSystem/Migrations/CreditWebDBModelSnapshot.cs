@@ -25,10 +25,7 @@ namespace CredidSystem.Migrations
             modelBuilder.Entity("CredidSystem.Entity.Branch", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -261,6 +258,9 @@ namespace CredidSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("BranchId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
@@ -304,6 +304,13 @@ namespace CredidSystem.Migrations
 
             modelBuilder.Entity("CredidSystem.Entity.Branch", b =>
                 {
+                    b.HasOne("CredidSystem.Entity.Product", null)
+                        .WithOne("Branch")
+                        .HasForeignKey("CredidSystem.Entity.Branch", "Id")
+                        .HasPrincipalKey("CredidSystem.Entity.Product", "BranchId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("CredidSystem.Entity.Merchant", "Merchant")
                         .WithMany("Branches")
                         .HasForeignKey("MerchantId")
@@ -383,6 +390,12 @@ namespace CredidSystem.Migrations
             modelBuilder.Entity("CredidSystem.Entity.Merchant", b =>
                 {
                     b.Navigation("Branches");
+                });
+
+            modelBuilder.Entity("CredidSystem.Entity.Product", b =>
+                {
+                    b.Navigation("Branch")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

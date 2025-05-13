@@ -12,10 +12,10 @@ namespace CredidSystem.Repository.Implementation
         private readonly CreditWebDB _context;
         private readonly DbSet<TEntity> _dbSet;
 
-        public GenericRepository(CreditWebDB creditWebDB, DbSet<TEntity> entities)
+        public GenericRepository(CreditWebDB creditWebDB)
         {
             _context = creditWebDB;
-            _dbSet = _context.Set<TEntity>();
+            _dbSet = _context.Set<TEntity>(); 
         }
 
         public async Task<TEntity> CreateAsync(TEntity entity)
@@ -40,7 +40,7 @@ namespace CredidSystem.Repository.Implementation
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            var datas = await _dbSet.Where(i => i.IsDeleted == true).AsNoTracking<TEntity>().ToListAsync();
+            var datas = await _dbSet.Where(i => i.IsDeleted == false).AsNoTracking<TEntity>().ToListAsync();
             return datas;
         }
 

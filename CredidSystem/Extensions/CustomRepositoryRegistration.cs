@@ -8,6 +8,8 @@ namespace CredidSystem.Extensions
        public static void AddRepositories(this IServiceCollection services)
         {
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IMerchantRepo, MerchantRepos>();
+            services.AddScoped<IBranchRepository, BranchRepository>();
             //services.AddScoped<ILoanRepository, LoanRepository>();
             //services.AddScoped<ICustomerRepository, CustomerRepository>();
             //services.AddScoped<IEmployeeRepository, EmployeeRepository>();

@@ -14,7 +14,9 @@ namespace CredidSystem.Configurations
             builder.HasOne(e => e.Loan)
                    .WithOne()
                    .HasForeignKey<Product>(e => e.LoanId).OnDelete(DeleteBehavior.NoAction);
-          
+            builder.HasOne(e => e.Branch).WithOne().HasPrincipalKey<Product>(w => w.BranchId).OnDelete(DeleteBehavior.NoAction);
+
+
         }
 
        

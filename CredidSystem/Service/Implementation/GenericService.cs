@@ -26,7 +26,7 @@ namespace CredidSystem.Service.Implementation
             }
             var dto = _mapper.Map<TModel>(result);
 
-            return model;
+            return dto;
         }
 
         public async Task<bool> DeleteAsync(int id) => await _genericRepository.DeleteAsync(id);

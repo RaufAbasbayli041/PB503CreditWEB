@@ -2,6 +2,7 @@
 using CredidSystem.Entity;
 using CredidSystem.Models;
 using CredidSystem.Repository.Interface;
+using CredidSystem.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CredidSystem.Areas.Admin.Controllers
@@ -9,22 +10,20 @@ namespace CredidSystem.Areas.Admin.Controllers
     [Area("Admin")]
     public class MerchantController : Controller
     {
-        private readonly IGenericRepository<Merchant> _merchantRepository;
-        private readonly IMapper _mapper;
+        
         private readonly IWebHostEnvironment _webHostEnvironment;
-
-        public MerchantController(IGenericRepository<Merchant> merchantRepository, IMapper mapper, IWebHostEnvironment webHostEnvironment)
+        private readonly IMerchantService _merchantService;
+        public MerchantController(IWebHostEnvironment webHostEnvironment, IMerchantService merchantService)
         {
-            _merchantRepository = merchantRepository;
-            _mapper = mapper;
             _webHostEnvironment = webHostEnvironment;
+            _merchantService = merchantService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var merchants = await _merchantRepository.GetAllAsync();
-            var model = _mapper.Map<IEnumerable<MerchantViewModel>>(merchants);
-            return View(model);
+            var merchants = await _merchantService.GetAllAsync();
+
+            return View(merchants);
         }
         public async Task<IActionResult> Create()
         {
@@ -33,8 +32,7 @@ namespace CredidSystem.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(MerchantViewModel merchantViewModel)
         {
-            var merchant = _mapper.Map<Merchant>(merchantViewModel);
-            await _merchantRepository.CreateAsync(merchant);
+            await _merchantService.CreateAsync(merchantViewModel);
             return RedirectToAction(nameof(Index));
         }
 

@@ -8,6 +8,11 @@ namespace CredidSystem.Extensions
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>));
+
+            services.AddScoped<IMerchantService, MerchantService>();
+            services.AddScoped<IBranchService, BranchService>();
+
+
         }
     }
 }
