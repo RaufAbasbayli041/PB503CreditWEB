@@ -1,5 +1,6 @@
 ﻿using CredidSystem.DB;
 using CredidSystem.Models;
+using CredidSystem.Service.Implementation;
 using CredidSystem.Service.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +14,9 @@ namespace CredidSystem.Areas.Admin.Controllers
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IBranchService _branchService;
+
         private readonly CreditWebDB _db;
+
 
 
         public BranchController(IBranchService branchService, IWebHostEnvironment webHostEnvironment, CreditWebDB db)
@@ -27,12 +30,13 @@ namespace CredidSystem.Areas.Admin.Controllers
         public async Task<ActionResult> Index()
         {
             var branches = await _branchService.GetAllAsync();
+
             return View(branches);
         }
 
         public async Task<ActionResult> Create()
         {
-            ViewBag.Merchants = await _db.Merchants.ToListAsync();
+            ViewBag.Merchants = await _branchService.GetAllAsync();
             return View();
         }
         [HttpPost]
@@ -43,15 +47,51 @@ namespace CredidSystem.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        public override bool Equals(object? obj)
+        public async Task<ActionResult> Edit(int id)
         {
-            return obj is BranchController controller &&
-                   EqualityComparer<CreditWebDB>.Default.Equals(_db, controller._db);
+            var branch = await _branchService.GetByIdAsync(id);
+            if (branch == null)
+            {
+                return NotFound();
+            }
+            ViewBag.Merchants = await _branchService.GetAllAsync();
+            return View(branch);
         }
 
-        public override int GetHashCode()
+        [HttpPost]
+        public async Task<ActionResult> Edit(BranchViewModel branchViewModel)
         {
-            return HashCode.Combine(_db);
+            if (ModelState.IsValid)
+            {
+                var result = await _branchService.Update(branchViewModel);
+                return RedirectToAction("Index");
+            }
+            ViewBag.Merchants = await _db.Merchants.ToListAsync();
+            return View(branchViewModel);
+
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Detail(int id)
+        {
+            var merchant = await _branchService.GetByIdAsync(id);
+            if (merchant == null)
+            {
+                return NotFound();
+            }
+            return View(merchant);
+        }
+
+
+        //[HttpPost] 
+        //public async Task<IActionResult> Delete(int id)
+        //{
+        //    var result = await _branchService.DeleteAsync(id);
+        //    if (result)
+        //    {
+        //        return RedirectToAction("Index");
+        //    }
+        //    return NotFound();
+        //}
     }
 }

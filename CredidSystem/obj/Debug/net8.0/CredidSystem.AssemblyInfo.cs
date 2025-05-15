@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CredidSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9674e91c72e5255deae16af93e1ae534a2f2068d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac0a012960dd9507d81f62346ea1ef0aa2dd9a72")]
 [assembly: System.Reflection.AssemblyProductAttribute("CredidSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CredidSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

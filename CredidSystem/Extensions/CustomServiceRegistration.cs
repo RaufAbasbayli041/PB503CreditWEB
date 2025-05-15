@@ -11,6 +11,9 @@ namespace CredidSystem.Extensions
 
             services.AddScoped<IMerchantService, MerchantService>();
             services.AddScoped<IBranchService, BranchService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+
 
 
         }

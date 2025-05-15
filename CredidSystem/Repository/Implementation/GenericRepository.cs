@@ -9,7 +9,7 @@ namespace CredidSystem.Repository.Implementation
 {
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity, new()
     {
-        private readonly CreditWebDB _context;
+        protected readonly CreditWebDB _context;
         private readonly DbSet<TEntity> _dbSet;
 
         public GenericRepository(CreditWebDB creditWebDB)

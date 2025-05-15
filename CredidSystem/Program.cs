@@ -22,7 +22,7 @@ namespace CredidSystem
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 
-           builder.Services.AddRepositories();
+            builder.Services.AddRepositories();
             builder.Services.AddServices();
 
 

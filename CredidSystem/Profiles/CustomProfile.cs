@@ -10,6 +10,9 @@ namespace CredidSystem.Profiles
         {
             CreateMap<MerchantViewModel, Merchant>().ReverseMap();
             CreateMap<BranchViewModel, Branch>().ReverseMap();
+            CreateMap<CategoryViewModel, Category>().ReverseMap();
+            CreateMap<ProductViewModel, Product>().ReverseMap();
+
         }
     }
 }

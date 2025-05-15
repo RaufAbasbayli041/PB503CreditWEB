@@ -10,7 +10,7 @@ namespace CredidSystem.Areas.Admin.Controllers
     [Area("Admin")]
     public class MerchantController : Controller
     {
-        
+
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IMerchantService _merchantService;
         public MerchantController(IWebHostEnvironment webHostEnvironment, IMerchantService merchantService)
@@ -29,6 +29,7 @@ namespace CredidSystem.Areas.Admin.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(MerchantViewModel merchantViewModel)
         {
@@ -36,5 +37,46 @@ namespace CredidSystem.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Edit(int id)
+        {
+            var merchant = await _merchantService.GetByIdAsync(id);
+            if (merchant == null)
+            {
+                return NotFound();
+            }
+            return View(merchant);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(MerchantViewModel merchantViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                await _merchantService.Update(merchantViewModel);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(merchantViewModel);
+        }
+
+        //public async Task<IActionResult> Delete(int id)
+        //{
+        //    var merchant = await _merchantService.GetByIdAsync(id);
+        //    if (merchant == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(merchant);
+        //}
+
+        [HttpGet]
+        public async Task<IActionResult> Detail(int id)
+        {
+            var merchant = await _merchantService.GetByIdAsync(id);
+            if (merchant == null)
+            {
+                return NotFound();
+            }
+            return View(merchant);
+        }
     }
 }

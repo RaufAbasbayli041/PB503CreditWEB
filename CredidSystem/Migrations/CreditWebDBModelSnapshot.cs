@@ -25,7 +25,10 @@ namespace CredidSystem.Migrations
             modelBuilder.Entity("CredidSystem.Entity.Branch", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -272,6 +275,10 @@ namespace CredidSystem.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -294,6 +301,8 @@ namespace CredidSystem.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BranchId");
+
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("LoanId")
@@ -304,13 +313,6 @@ namespace CredidSystem.Migrations
 
             modelBuilder.Entity("CredidSystem.Entity.Branch", b =>
                 {
-                    b.HasOne("CredidSystem.Entity.Product", null)
-                        .WithOne("Branch")
-                        .HasForeignKey("CredidSystem.Entity.Branch", "Id")
-                        .HasPrincipalKey("CredidSystem.Entity.Product", "BranchId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.HasOne("CredidSystem.Entity.Merchant", "Merchant")
                         .WithMany("Branches")
                         .HasForeignKey("MerchantId")
@@ -355,6 +357,12 @@ namespace CredidSystem.Migrations
 
             modelBuilder.Entity("CredidSystem.Entity.Product", b =>
                 {
+                    b.HasOne("CredidSystem.Entity.Branch", "Branch")
+                        .WithMany()
+                        .HasForeignKey("BranchId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("CredidSystem.Entity.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
@@ -366,6 +374,8 @@ namespace CredidSystem.Migrations
                         .HasForeignKey("CredidSystem.Entity.Product", "LoanId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
+
+                    b.Navigation("Branch");
 
                     b.Navigation("Category");
 
@@ -390,12 +400,6 @@ namespace CredidSystem.Migrations
             modelBuilder.Entity("CredidSystem.Entity.Merchant", b =>
                 {
                     b.Navigation("Branches");
-                });
-
-            modelBuilder.Entity("CredidSystem.Entity.Product", b =>
-                {
-                    b.Navigation("Branch")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
