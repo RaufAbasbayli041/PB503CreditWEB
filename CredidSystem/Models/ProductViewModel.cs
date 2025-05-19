@@ -24,8 +24,8 @@ namespace CredidSystem.Models
         [Display(Name = "Branch")]
         public int BranchId { get; set; }
         public Branch Branch { get; set; } // Navigation property
-
         public List<BranchViewModel> Branches { get; set; }
+
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }

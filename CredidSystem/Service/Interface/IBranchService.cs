@@ -7,6 +7,7 @@ namespace CredidSystem.Service.Interface
     {
         Task<BranchViewModel> GetByIdAsync(int id);
         Task<IEnumerable<BranchViewModel>> GetAllAsync();
+        Task<List<BranchViewModel>> GetAllWithIncudeAsync();
         Task<bool> DeleteAsync(int id);
         Task<BranchViewModel> Update(BranchViewModel viewModel);
         Task<BranchViewModel> CreateAsync(BranchViewModel viewModel);

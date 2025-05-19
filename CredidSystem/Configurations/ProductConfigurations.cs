@@ -8,12 +8,10 @@ namespace CredidSystem.Configurations
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.HasKey(x => x.Id);
+          
             builder.Property(e => e.Name).IsRequired().HasMaxLength(50);
             builder.Property(e => e.Description).IsRequired().HasMaxLength(50);
-            builder.HasOne(e => e.Loan)
-                   .WithOne()
-                   .HasForeignKey<Product>(e => e.LoanId).OnDelete(DeleteBehavior.NoAction);
+            
             builder.HasOne(e => e.Branch).WithMany().HasForeignKey(w => w.BranchId).OnDelete(DeleteBehavior.NoAction);
 
 

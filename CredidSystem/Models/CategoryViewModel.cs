@@ -11,5 +11,7 @@ namespace CredidSystem.Models
         [Required]
         public List<ProductViewModel> Products { get; set; } // Navigation property
         public List<BranchViewModel> Branches { get; set; } // Navigation property
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

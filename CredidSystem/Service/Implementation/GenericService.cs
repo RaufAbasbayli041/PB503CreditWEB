@@ -62,7 +62,7 @@ namespace CredidSystem.Service.Implementation
                 return null;
             }
             var dto = _mapper.Map<TModel>(result);
-            return model;
+            return dto;
         }
     }
 

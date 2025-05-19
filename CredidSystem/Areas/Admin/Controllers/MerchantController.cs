@@ -58,15 +58,17 @@ namespace CredidSystem.Areas.Admin.Controllers
             return View(merchantViewModel);
         }
 
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    var merchant = await _merchantService.GetByIdAsync(id);
-        //    if (merchant == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return View(merchant);
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var merchant = await _merchantService.DeleteAsync(id);
+            if (merchant == false)
+            {
+                return NotFound();
+            }
+            return RedirectToAction("Index");
+        }
+        
 
         [HttpGet]
         public async Task<IActionResult> Detail(int id)

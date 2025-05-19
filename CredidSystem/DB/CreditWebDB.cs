@@ -1,9 +1,10 @@
 ﻿using CredidSystem.Entity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CredidSystem.DB
 {
-    public class CreditWebDB : DbContext
+    public class CreditWebDB : IdentityDbContext<User>
     {
         public CreditWebDB(DbContextOptions<CreditWebDB> options) : base(options)
         {
@@ -22,11 +23,13 @@ namespace CredidSystem.DB
             // Все твои конфигурации
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CreditWebDB).Assembly);
         }
+
+        public DbSet<Admin> Admins { get; set; }
+
         public DbSet<Merchant> Merchants { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Loan> Loans { get; set; }
+      
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         

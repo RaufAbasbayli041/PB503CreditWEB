@@ -7,6 +7,7 @@ namespace CredidSystem.Repository.Interface
         // Add any additional methods specific to Branch repository here
         // For example:
        Task<IEnumerable<Branch>> GetBranchesByMerchantIdAsync();
+        Task<List<Branch>> GetAllWithInclude();
 
     }
 

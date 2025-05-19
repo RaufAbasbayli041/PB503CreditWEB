@@ -1,17 +1,21 @@
 using CredidSystem.DB;
+using CredidSystem.Entity;
 using CredidSystem.Extensions;
+using CredidSystem.Helpers;
 using CredidSystem.Profiles;
 using CredidSystem.Repository.Implementation;
 using CredidSystem.Repository.Interface;
 using CredidSystem.Service.Implementation;
 using CredidSystem.Service.Interface;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace CredidSystem
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +25,19 @@ namespace CredidSystem
                 options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionString")));
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
+            builder.Services.AddIdentity<User, IdentityRole>(opt=>
+            {
+                opt.SignIn.RequireConfirmedAccount = false;
+                opt.User.RequireUniqueEmail = true;
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequireDigit = true;
+                opt.Password.RequireLowercase = false;
+                opt.User.RequireUniqueEmail = true;
+                opt.Password.RequireUppercase = false;
+                opt.Password.RequireNonAlphanumeric = false;
+            })
+                .AddEntityFrameworkStores<CreditWebDB>()
+                .AddDefaultTokenProviders();
 
             builder.Services.AddRepositories();
             builder.Services.AddServices();
@@ -46,7 +63,7 @@ namespace CredidSystem
 
             app.MapControllerRoute(
                name: "areas",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                pattern: "{area:exists}/{controller=Account}/{action=SignIn}/{id?}");
 
             app.MapControllerRoute(
               name: "default",
@@ -55,7 +72,12 @@ namespace CredidSystem
 
 
 
-
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+               await DBHelper.SetRoles(services);
+               
+            }
             app.Run();
         }
     }

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CredidSystem.Entity;
 using CredidSystem.Models;
+using CredidSystem.Repository.Implementation;
 using CredidSystem.Repository.Interface;
 using CredidSystem.Service.Interface;
 
@@ -8,17 +9,29 @@ namespace CredidSystem.Service.Implementation
 {
     public class BranchService : GenericService<BranchViewModel, Branch>, IBranchService
     {
-      private readonly IGenericRepository<Branch> _repository;
+       
+        private readonly IBranchRepository  _branchRepository;  
         private readonly IMapper _mapper;
 
-        public BranchService(IMapper mapper, IGenericRepository<Branch> repository) : base(mapper, repository)
+        public BranchService(IMapper mapper,  IBranchRepository branchRepository) : base(mapper, branchRepository)
         {
-            _repository = repository;
+            _mapper = mapper;
+         
+            _branchRepository = branchRepository;
         }
-      
 
-        
 
+
+        public async Task<List<BranchViewModel>> GetAllWithIncudeAsync()
+        {
+            var entities = await _branchRepository.GetAllWithInclude();
+            if (entities == null)
+            {
+                return null;
+            }
+            var models = _mapper.Map<List<BranchViewModel>>(entities);
+            return models;
+        }
     }
     
 }

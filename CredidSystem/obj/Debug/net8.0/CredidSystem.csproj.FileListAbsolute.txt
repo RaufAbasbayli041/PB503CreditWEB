@@ -590,8 +590,6 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\b
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Cors.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -659,8 +657,6 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\b
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.WebSockets.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.AspNetCore.WebUtilities.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.CSharp.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
@@ -672,8 +668,6 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\b
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Xml.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
@@ -687,23 +681,17 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\b
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Http.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Core.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Localization.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Configuration.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Console.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Debug.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventLog.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventSource.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.TraceSource.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.ObjectPool.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Options.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Primitives.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.WebEncoders.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.JSInterop.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Net.Http.Headers.dll
@@ -734,7 +722,6 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\b
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Data.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.Contracts.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.Debug.dll
-C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.DiagnosticSource.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.EventLog.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.FileVersionInfo.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.Process.dll
@@ -1134,3 +1121,17 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\o
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\obj\Debug\net8.0\ref\CredidSystem.dll
 C:\Users\elnur.a\Desktop\Rauf\Visual Studio\ASP.NET MVC\PB503CreditWEB\CredidSystem\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Options.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.DiagnosticSource.dll

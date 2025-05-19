@@ -29,19 +29,20 @@ namespace CredidSystem.Areas.Admin.Controllers
         // GET: BranchController
         public async Task<ActionResult> Index()
         {
-            var branches = await _branchService.GetAllAsync();
+            var branches = await _branchService.GetAllWithIncudeAsync();
 
             return View(branches);
         }
 
         public async Task<ActionResult> Create()
         {
-            ViewBag.Merchants = await _branchService.GetAllAsync();
+            ViewBag.Merchants = await _db.Merchants.ToListAsync();
             return View();
         }
         [HttpPost]
         public async Task<ActionResult> Create(BranchViewModel branchViewModel)
         {
+            ViewBag.Merchants = await _db.Merchants.ToListAsync();
             var result = await _branchService.CreateAsync(branchViewModel);
 
             return RedirectToAction("Index");
@@ -54,20 +55,18 @@ namespace CredidSystem.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewBag.Merchants = await _branchService.GetAllAsync();
+            ViewBag.Merchants = await _db.Merchants.ToListAsync();
             return View(branch);
         }
 
         [HttpPost]
         public async Task<ActionResult> Edit(BranchViewModel branchViewModel)
         {
-            if (ModelState.IsValid)
-            {
-                var result = await _branchService.Update(branchViewModel);
-                return RedirectToAction("Index");
-            }
+
+            var result = await _branchService.Update(branchViewModel);
             ViewBag.Merchants = await _db.Merchants.ToListAsync();
-            return View(branchViewModel);
+            return RedirectToAction("Index");
+           
 
         }
 
@@ -83,15 +82,15 @@ namespace CredidSystem.Areas.Admin.Controllers
         }
 
 
-        //[HttpPost] 
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    var result = await _branchService.DeleteAsync(id);
-        //    if (result)
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
-        //    return NotFound();
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var merchant = await _branchService.DeleteAsync(id);
+            if (merchant == false)
+            {
+                return NotFound();
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
