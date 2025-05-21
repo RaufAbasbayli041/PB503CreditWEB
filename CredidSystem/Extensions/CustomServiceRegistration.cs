@@ -1,4 +1,5 @@
-﻿using CredidSystem.Service.Implementation;
+﻿using CredidSystem.Service;
+using CredidSystem.Service.Implementation;
 using CredidSystem.Service.Interface;
 
 namespace CredidSystem.Extensions
@@ -13,6 +14,7 @@ namespace CredidSystem.Extensions
             services.AddScoped<IBranchService, BranchService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<EmailService>();
 
 
 

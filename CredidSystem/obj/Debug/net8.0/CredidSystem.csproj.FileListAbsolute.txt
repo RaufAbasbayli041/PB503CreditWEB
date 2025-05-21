@@ -1135,3 +1135,9 @@ C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\b
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Options.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\Microsoft.Extensions.Primitives.dll
 C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\refs\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\MailKit.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\MimeKit.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ASUS\Desktop\Code Academy\C#\MVC\Homework\PB503CreditWEB\CredidSystem\bin\Debug\net8.0\NETCore.MailKit.dll

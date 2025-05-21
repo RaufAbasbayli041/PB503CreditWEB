@@ -25,21 +25,7 @@ namespace CredidSystem.Helpers
             string adminEmail = "admin@admin.com";
             string adminPassword = "Admin@123";
 
-            if (await userManager.FindByEmailAsync(adminEmail) == null)
-            {
-                var adminUser = new Admin()
-                {
-                    UserName = "admin",
-                    Email = adminEmail,
-                    EmailConfirmed = true,
-                               
-                };
-                var result = await userManager.CreateAsync(adminUser, adminPassword);
-                if (result.Succeeded)
-                {
-                    await userManager.AddToRoleAsync(adminUser, "Admin");
-                }
-            }
+          
         }
     }
 }

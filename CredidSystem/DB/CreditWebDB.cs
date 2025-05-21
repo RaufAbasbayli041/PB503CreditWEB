@@ -24,8 +24,7 @@ namespace CredidSystem.DB
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CreditWebDB).Assembly);
         }
 
-        public DbSet<Admin> Admins { get; set; }
-
+       
         public DbSet<Merchant> Merchants { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Employee> Employees { get; set; }

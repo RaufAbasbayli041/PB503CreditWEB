@@ -2,14 +2,18 @@ using CredidSystem.DB;
 using CredidSystem.Entity;
 using CredidSystem.Extensions;
 using CredidSystem.Helpers;
+using CredidSystem.Helpers.MailSettings;
 using CredidSystem.Profiles;
 using CredidSystem.Repository.Implementation;
 using CredidSystem.Repository.Interface;
+using CredidSystem.Service;
 using CredidSystem.Service.Implementation;
 using CredidSystem.Service.Interface;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using NETCore.MailKit.Core;
 using System.Threading.Tasks;
+using EmailService = CredidSystem.Service.EmailService;
 
 namespace CredidSystem
 {
@@ -25,7 +29,7 @@ namespace CredidSystem
                 options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionString")));
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
-            builder.Services.AddIdentity<User, IdentityRole>(opt=>
+            builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
                 opt.SignIn.RequireConfirmedAccount = false;
                 opt.User.RequireUniqueEmail = true;
@@ -38,6 +42,10 @@ namespace CredidSystem
             })
                 .AddEntityFrameworkStores<CreditWebDB>()
                 .AddDefaultTokenProviders();
+
+            builder.Services.Configure<EmailSettings>(
+            builder.Configuration.GetSection("EmailSettings"));
+
 
             builder.Services.AddRepositories();
             builder.Services.AddServices();
@@ -75,8 +83,8 @@ namespace CredidSystem
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-               await DBHelper.SetRoles(services);
-               
+                await DBHelper.SetRoles(services);
+
             }
             app.Run();
         }
