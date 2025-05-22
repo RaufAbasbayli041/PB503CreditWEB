@@ -1,54 +1,50 @@
 ﻿@model CredidSystem.Models.BranchViewModel
 
-<div>
-    <h4>BranchViewModel</h4>
+
+
+
+
+
+<div class="container mt-4">
+    <h4 class="text-center">Branch Detail</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Address)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Address)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhoneNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MerchantId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MerchantId)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedAt)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CreatedAt)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedAt)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.UpdatedAt)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-warning">Update</a>
-    <a asp-action="Index">Back to List</a>
+
+    <table class="table table-borderless w-auto mx-auto">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>@Model.Id</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>@Model.Address</td>
+            </tr>
+            <tr>
+                <th>PhoneNumber</th>
+                <td>@Model.PhoneNumber</td>
+            </tr>
+            <tr>
+                <th>MerchantId</th>
+                <td>@Model.MerchantId</td>
+            </tr>
+           
+            <tr>
+                <th>Created At</th>
+                <td>@Model.CreatedAt</td>
+            </tr>
+            <tr>
+                <th>Updated At</th>
+                <td>@Model.UpdatedAt</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="text-center mt-3">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-warning me-2">Update</a>
+        <a asp-action="Index" class="btn btn-outline-primary">Back to List</a>
+    </div>
 </div>

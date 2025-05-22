@@ -1,46 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\",
+  "WorkspaceRootPath": "C:\\Users\\elnur.a\\Desktop\\Rauf\\Visual Studio\\ASP.NET MVC\\PB503CreditWEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\elnur.a\\desktop\\rauf\\visual studio\\asp.net mvc\\pb503creditweb\\credidsystem\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\elnur.a\\desktop\\rauf\\visual studio\\asp.net mvc\\pb503creditweb\\credidsystem\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\extensions\\customserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\extensions\\customserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\service\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\service\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\areas\\admin\\views\\account\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\areas\\admin\\views\\account\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\areas\\admin\\models\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\areas\\admin\\models\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\helpers\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\helpers\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\entity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\entity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\asus\\desktop\\code academy\\c#\\mvc\\homework\\pb503creditweb\\credidsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|c:\\users\\elnur.a\\desktop\\rauf\\visual studio\\asp.net mvc\\pb503creditweb\\credidsystem\\areas\\admin\\views\\merchant\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FD11B4-4501-4ACC-A3EC-269D0F039B88}|CredidSystem\\CredidSystem.csproj|solutionrelative:credidsystem\\areas\\admin\\views\\merchant\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,132 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Extensions\\CustomServiceRegistration.cs",
-              "RelativeDocumentMoniker": "CredidSystem\\Extensions\\CustomServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Extensions\\CustomServiceRegistration.cs",
-              "RelativeToolTip": "CredidSystem\\Extensions\\CustomServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:41:26.585Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elnur.a\\Desktop\\Rauf\\Visual Studio\\ASP.NET MVC\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "CredidSystem\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elnur.a\\Desktop\\Rauf\\Visual Studio\\ASP.NET MVC\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "CredidSystem\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwG4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T12:01:50.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Program.cs",
-              "RelativeDocumentMoniker": "CredidSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Program.cs",
-              "RelativeToolTip": "CredidSystem\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwC0AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:40:28.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmailSettings.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Service\\EmailSettings.cs",
-              "RelativeDocumentMoniker": "CredidSystem\\Service\\EmailSettings.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Service\\EmailSettings.cs",
-              "RelativeToolTip": "CredidSystem\\Service\\EmailSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:14:00.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SignIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Account\\SignIn.cshtml",
-              "RelativeDocumentMoniker": "CredidSystem\\Areas\\Admin\\Views\\Account\\SignIn.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Account\\SignIn.cshtml",
-              "RelativeToolTip": "CredidSystem\\Areas\\Admin\\Views\\Account\\SignIn.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAABkAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elnur.a\\Desktop\\Rauf\\Visual Studio\\ASP.NET MVC\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "CredidSystem\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elnur.a\\Desktop\\Rauf\\Visual Studio\\ASP.NET MVC\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "CredidSystem\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T14:32:02.816Z",
+              "WhenOpened": "2025-05-22T11:59:03.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SignUpViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Models\\SignUpViewModel.cs",
-              "RelativeDocumentMoniker": "CredidSystem\\Areas\\Admin\\Models\\SignUpViewModel.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Models\\SignUpViewModel.cs",
-              "RelativeToolTip": "CredidSystem\\Areas\\Admin\\Models\\SignUpViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T14:30:57.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Helpers\\Enum\\Roles.cs",
-              "RelativeDocumentMoniker": "CredidSystem\\Helpers\\Enum\\Roles.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Helpers\\Enum\\Roles.cs",
-              "RelativeToolTip": "CredidSystem\\Helpers\\Enum\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:18:50.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "CredidSystem\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "CredidSystem\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAgwFgAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T15:15:50.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Entity\\Employee.cs",
-              "RelativeDocumentMoniker": "CredidSystem\\Entity\\Employee.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Entity\\Employee.cs",
-              "RelativeToolTip": "CredidSystem\\Entity\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T13:45:49.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Header.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Views\\Shared\\_Header.cshtml",
-              "RelativeDocumentMoniker": "CredidSystem\\Views\\Shared\\_Header.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Views\\Shared\\_Header.cshtml",
-              "RelativeToolTip": "CredidSystem\\Views\\Shared\\_Header.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elnur.a\\Desktop\\Rauf\\Visual Studio\\ASP.NET MVC\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Merchant\\Index.cshtml",
+              "RelativeDocumentMoniker": "CredidSystem\\Areas\\Admin\\Views\\Merchant\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elnur.a\\Desktop\\Rauf\\Visual Studio\\ASP.NET MVC\\PB503CreditWEB\\CredidSystem\\Areas\\Admin\\Views\\Merchant\\Index.cshtml",
+              "RelativeToolTip": "CredidSystem\\Areas\\Admin\\Views\\Merchant\\Index.cshtml",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAI4AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T15:33:18.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CredidSystem\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Code Academy\\C#\\MVC\\Homework\\PB503CreditWEB\\CredidSystem\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CredidSystem\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T15:33:12.751Z",
+              "WhenOpened": "2025-05-22T11:17:17.355Z",
               "EditorCaption": ""
             }
           ]
