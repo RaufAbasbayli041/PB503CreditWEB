@@ -11,15 +11,17 @@ namespace CredidSystem.Repository.Implementation
         {
         }
 
-        public async Task<IEnumerable<Product>> GetProductsByCategoryAsync()
+        public async Task<List<Product>> GetAllWithInclude()
         {
-            var products = _context.Products
+            return await _context.Products
                 .Include(p => p.Category)
+                .Include(p => p.Branch)
                 .Where(p => !p.IsDeleted)
                 .AsNoTracking()
                 .ToListAsync();
-            return await products;
         }
+
+      
     }
 
 

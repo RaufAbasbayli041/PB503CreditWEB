@@ -10,7 +10,10 @@ namespace CredidSystem.Service.Interface
         Task<bool> DeleteAsync(int id);
         Task<ProductViewModel> Update(ProductViewModel viewModel);
         Task<ProductViewModel> CreateAsync(ProductViewModel viewModel);
-        
+       
+        Task<List<ProductViewModel>> GetAllWithIncudeAsync();
+
+
     }
     
     

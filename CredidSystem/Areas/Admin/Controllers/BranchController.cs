@@ -36,13 +36,19 @@ namespace CredidSystem.Areas.Admin.Controllers
 
         public async Task<ActionResult> Create()
         {
-            ViewBag.Merchants = await _db.Merchants.ToListAsync();
+            ViewBag.Branches = await _db.Branches.ToListAsync();
+
+            ViewBag.Categories = await _db.Categories.ToListAsync();
+
             return View();
         }
         [HttpPost]
         public async Task<ActionResult> Create(BranchViewModel branchViewModel)
         {
-            ViewBag.Merchants = await _db.Merchants.ToListAsync();
+            ViewBag.Branches = await _db.Branches.ToListAsync();
+            ViewBag.Categories = await _db.Categories.ToListAsync();
+
+
             var result = await _branchService.CreateAsync(branchViewModel);
 
             return RedirectToAction("Index");

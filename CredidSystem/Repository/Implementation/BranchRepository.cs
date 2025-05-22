@@ -15,8 +15,7 @@ namespace CredidSystem.Repository.Implementation
         public async Task<List<Branch>> GetAllWithInclude()
         {
             return await _context.Branches
-                .Include(b => b.Merchant)
-               
+                .Include(b => b.Merchant)               
                 .Where(b => b.IsDeleted == false)
                 .AsNoTracking()
                 .ToListAsync();
