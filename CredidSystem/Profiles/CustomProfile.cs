@@ -11,8 +11,11 @@ namespace CredidSystem.Profiles
             CreateMap<MerchantViewModel, Merchant>().ReverseMap();
             CreateMap<BranchViewModel, Branch>().ReverseMap();
             CreateMap<CategoryViewModel, Category>().ReverseMap();
-            CreateMap<ProductViewModel, Product>().ForMember(x=>x.Category,opt=>opt.MapFrom(x=>x.CategoryName)).ForMember(y=>y.Branch,opt=> opt.MapFrom(x=>x.BranchName)).ReverseMap();
-
+            CreateMap<ProductViewModel, Product>()
+           .ForMember(dest => dest.Id, opt => opt.Ignore()) // если Id заполняется БД
+           .ReverseMap()
+           .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
+           .ForMember(dest => dest.BranchName, opt => opt.MapFrom(src => src.Branch.Name));
         }
     }
 }

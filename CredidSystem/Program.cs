@@ -26,7 +26,7 @@ namespace CredidSystem
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<CreditWebDB>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionString")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnectionStringEvr")));
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
             builder.Services.AddIdentity<User, IdentityRole>(opt =>

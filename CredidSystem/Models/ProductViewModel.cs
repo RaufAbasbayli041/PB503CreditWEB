@@ -18,14 +18,14 @@ namespace CredidSystem.Models
         [Display(Name = "Category")]
         public int CategoryId { get; set; }
         public string CategoryName { get; set; } // For displaying category name
-        public Category Category { get; set; }
+       
         public List<CategoryViewModel> Categories { get; set; }
 
         [Required]
         [Display(Name = "Branch")]
         public int BranchId { get; set; }
         public string BranchName { get; set; } // For displaying branch name
-        public Branch Branch { get; set; } // Navigation property
+     
         public List<BranchViewModel> Branches { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

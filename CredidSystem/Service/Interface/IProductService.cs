@@ -11,7 +11,7 @@ namespace CredidSystem.Service.Interface
         Task<ProductViewModel> Update(ProductViewModel viewModel);
         Task<ProductViewModel> CreateAsync(ProductViewModel viewModel);
        
-        Task<List<ProductViewModel>> GetAllWithIncudeAsync();
+        Task<IEnumerable<ProductViewModel>> GetAllWithIncludeAsync();
 
 
     }

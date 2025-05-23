@@ -19,9 +19,9 @@ namespace CredidSystem.Service.Implementation
             
         }
 
-        public async Task<List<ProductViewModel>> GetAllWithIncudeAsync()
+        public async Task<IEnumerable<ProductViewModel>> GetAllWithIncludeAsync()
         {
-           var products = await _productRepository.GetAllWithInclude();
+           var products = await _productRepository.GetAllWithIncludeAsync();
             if (products == null)
             {
                 return null;

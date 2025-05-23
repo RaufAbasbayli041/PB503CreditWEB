@@ -46,10 +46,10 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back,Admin!</h1>
                                     </div>
 
-                                    <form asp-action="SignIn" method="post" enctype="multipart/form-data" class="user">
+                                    <form asp-area="Admin" asp-action="SignIn" method="post" enctype="multipart/form-data" class="user">
                                         <div class="form-group">
                                             <label asp-for="Email" class="control-label"></label>
                                             <input asp-for="Email" class="form-control" />

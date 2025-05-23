@@ -11,7 +11,7 @@ namespace CredidSystem.Repository.Implementation
         {
         }
 
-        public async Task<List<Product>> GetAllWithInclude()
+        public async Task<IEnumerable<Product>> GetAllWithIncludeAsync()
         {
             return await _context.Products
                 .Include(p => p.Category)

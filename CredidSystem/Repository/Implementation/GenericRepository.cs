@@ -16,6 +16,7 @@ namespace CredidSystem.Repository.Implementation
         {
             _context = creditWebDB;
             _dbSet = _context.Set<TEntity>(); 
+
         }
 
         public async Task<TEntity> CreateAsync(TEntity entity)
@@ -46,7 +47,7 @@ namespace CredidSystem.Repository.Implementation
 
         public async Task<TEntity> GetByIdAsyn(int id)
         {
-            await _dbSet.FindAsync(id);
+          
             var data = await _dbSet.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id && !i.IsDeleted);
             return data;
         }

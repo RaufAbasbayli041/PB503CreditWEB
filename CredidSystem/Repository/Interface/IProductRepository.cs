@@ -5,7 +5,7 @@ namespace CredidSystem.Repository.Interface
     public interface IProductRepository : IGenericRepository<Product>
     {
         
-        Task<List<Product>> GetAllWithInclude();
+        Task<IEnumerable<Product>> GetAllWithIncludeAsync();
 
     }
 

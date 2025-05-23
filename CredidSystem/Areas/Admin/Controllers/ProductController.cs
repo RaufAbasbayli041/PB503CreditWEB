@@ -21,11 +21,9 @@ namespace CredidSystem.Areas.Admin.Controllers
             _productService = productService;
         }
 
-
-
-        public async Task<ActionResult> Index()
+        public async Task<IActionResult> Index()
         {
-            var products = await _productService.GetAllWithIncudeAsync();
+            var products = await _productService.GetAllWithIncludeAsync();
             return View(products);
         }
         public async Task<ActionResult> Details(int id)
@@ -45,37 +43,52 @@ namespace CredidSystem.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return View(product);
+            return RedirectToAction("Index");   
         }
         
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Categories =await _db.Categories.ToListAsync();
+            ViewBag.Categories = await _db.Categories.ToListAsync();
+            ViewBag.Branches = await _db.Branches.ToListAsync();
+
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> Create(ProductViewModel viewModel)
         {
             ViewBag.Categories = await _db.Categories.ToListAsync();
+            ViewBag.Branches = await _db.Branches.ToListAsync();
 
             var product = await _productService.CreateAsync(viewModel);
             return RedirectToAction("Index");
         }
-        public async Task<ActionResult> Edit()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
             var product = await _productService.GetByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
+            ViewBag.Categories = await _db.Categories.ToListAsync();
+            ViewBag.Branches = await _db.Branches.ToListAsync();
+
             return View(product);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(ProductViewModel productViewModel)
+        {
+            ViewBag.Categories = await _db.Categories.ToListAsync();
+            ViewBag.Branches = await _db.Branches.ToListAsync();
+
+            var products = await _productService.Update(productViewModel);
+            if (products == null)
+            {
+                return NotFound();
+
+            }
+            return RedirectToAction("Index");
         }
     }
 }

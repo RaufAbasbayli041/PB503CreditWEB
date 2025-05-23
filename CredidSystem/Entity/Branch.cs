@@ -15,7 +15,7 @@ namespace CredidSystem.Entity
         public int MerchantId { get; set; }
         public Merchant Merchant { get; set; } // Navigation property
 
-        public ICollection<Employee> Employees { get; set; } // Navigation property
+        public ICollection<Product> Products { get; set; } // Navigation property
         
       
        // public Product Product { get; set; } // Navigation property

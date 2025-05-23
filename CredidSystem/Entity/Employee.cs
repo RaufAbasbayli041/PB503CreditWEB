@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CredidSystem.Entity
 {
-    [EntityTypeConfiguration(typeof(EmployeeConfigurations))]
+  
     public class Employee : User
     {
 
