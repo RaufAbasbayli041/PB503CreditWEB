@@ -187,6 +187,41 @@ namespace CredidSystem.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("CredidSystem.Entity.ProductDocuments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductDocuments");
+                });
+
             modelBuilder.Entity("CredidSystem.Entity.User", b =>
                 {
                     b.Property<string>("Id")
@@ -450,6 +485,17 @@ namespace CredidSystem.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("CredidSystem.Entity.ProductDocuments", b =>
+                {
+                    b.HasOne("CredidSystem.Entity.Product", "Product")
+                        .WithMany("ProductDocuments")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -525,6 +571,11 @@ namespace CredidSystem.Migrations
             modelBuilder.Entity("CredidSystem.Entity.Merchant", b =>
                 {
                     b.Navigation("Branches");
+                });
+
+            modelBuilder.Entity("CredidSystem.Entity.Product", b =>
+                {
+                    b.Navigation("ProductDocuments");
                 });
 #pragma warning restore 612, 618
         }

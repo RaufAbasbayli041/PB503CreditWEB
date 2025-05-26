@@ -16,7 +16,8 @@ namespace CredidSystem.Service.Implementation
 
         public ProductService(IMapper mapper, IProductRepository productRepository)  :base(mapper, productRepository)
         {
-            
+            _productRepository = productRepository;
+            _mapper = mapper;
         }
 
         public async Task<IEnumerable<ProductViewModel>> GetAllWithIncludeAsync()
@@ -29,5 +30,7 @@ namespace CredidSystem.Service.Implementation
             var productViewModels = _mapper.Map<List<ProductViewModel>>(products);
             return productViewModels;
         }
+
+       
     }
 }

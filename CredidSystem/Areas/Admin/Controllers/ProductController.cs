@@ -4,6 +4,7 @@ using CredidSystem.Models;
 using CredidSystem.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata;
 using System.Threading.Tasks;
 
 namespace CredidSystem.Areas.Admin.Controllers
@@ -28,6 +29,8 @@ namespace CredidSystem.Areas.Admin.Controllers
         }
         public async Task<ActionResult> Details(int id)
         {
+            ViewBag.Categories = await _db.Categories.Where(x => x.IsDeleted == false).ToListAsync();
+            ViewBag.Branches = await _db.Branches.Where(x => x.IsDeleted == false).ToListAsync();
             var product = await _productService.GetByIdAsync(id);
             if (product == null)
             {
@@ -43,14 +46,14 @@ namespace CredidSystem.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return RedirectToAction("Index");   
+            return RedirectToAction("Index");
         }
-        
+
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Categories = await _db.Categories.ToListAsync();
-            ViewBag.Branches = await _db.Branches.ToListAsync();
+            ViewBag.Categories = await _db.Categories.Where(x => x.IsDeleted == false).ToListAsync();
+            ViewBag.Branches = await _db.Branches.Where(x => x.IsDeleted == false).ToListAsync();
 
             return View();
         }
@@ -60,18 +63,60 @@ namespace CredidSystem.Areas.Admin.Controllers
             ViewBag.Categories = await _db.Categories.ToListAsync();
             ViewBag.Branches = await _db.Branches.ToListAsync();
 
+            if (!ModelState.IsValid)
+            {
+                return View(viewModel);
+            }
+            var documents = new List<ProductDocuments>();
+            if (viewModel.ImageFiles != null)
+            {
+                var first = string.Empty;
+
+                foreach (var file in viewModel.ImageFiles)
+                {
+                    
+                        var fileName = Guid.NewGuid().ToString() + "_"+ Path.GetExtension(file.FileName);
+                        if (string.IsNullOrEmpty(first))
+                        {
+                           first = fileName;
+                        }
+                        var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "img", fileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await file.CopyToAsync(stream);
+                        }
+                     
+                     var productImage = new ProductDocuments()
+                     {
+                         FileName = fileName,
+                         FilePath = filePath,
+                         CreatedAt = DateTime.UtcNow,
+                         UpdatedAt = DateTime.UtcNow
+                     };
+
+                   documents.Add(productImage);
+
+                }
+                viewModel.ImageUrl = first; // Set the first image as the main image
+                viewModel.ProductDocuments = documents;
+
+
+            }
+
+          
             var product = await _productService.CreateAsync(viewModel);
             return RedirectToAction("Index");
         }
         public async Task<ActionResult> Edit(int id)
         {
+            ViewBag.Categories = await _db.Categories.ToListAsync();
+            ViewBag.Branches = await _db.Branches.ToListAsync();
             var product = await _productService.GetByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
-            ViewBag.Categories = await _db.Categories.ToListAsync();
-            ViewBag.Branches = await _db.Branches.ToListAsync();
+           
 
             return View(product);
         }

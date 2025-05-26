@@ -19,7 +19,8 @@ namespace CredidSystem.Entity
         public int BranchId { get; set; } 
         public Branch Branch { get; set; }
 
-       
+        public List<ProductDocuments> ProductDocuments { get; set; } = new List<ProductDocuments>(); // For storing product images
+
 
     }
 }

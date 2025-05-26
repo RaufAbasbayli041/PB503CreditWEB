@@ -13,6 +13,7 @@ namespace CredidSystem.Service.Interface
        
         Task<IEnumerable<ProductViewModel>> GetAllWithIncludeAsync();
 
+       
 
     }
     

@@ -12,7 +12,7 @@ namespace CredidSystem.Models
         public int Quantity { get; set; }
 
         public string ImageUrl { get; set; }
-        public List<IFormFile> Images { get; set; } // For multiple image upload
+        public List<IFormFile> ImageFiles { get; set; } // For multiple image upload
 
         [Required]
         [Display(Name = "Category")]
@@ -30,5 +30,6 @@ namespace CredidSystem.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public List<ProductDocuments> ProductDocuments { get; set; } = new(); // For storing product images
     }
 }

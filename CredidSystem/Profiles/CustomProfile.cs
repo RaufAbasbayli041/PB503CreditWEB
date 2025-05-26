@@ -15,7 +15,8 @@ namespace CredidSystem.Profiles
            .ForMember(dest => dest.Id, opt => opt.Ignore()) // если Id заполняется БД
            .ReverseMap()
            .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
-           .ForMember(dest => dest.BranchName, opt => opt.MapFrom(src => src.Branch.Name));
+           .ForMember(dest => dest.BranchName, opt => opt.MapFrom(src => src.Branch.Name))
+           .ForMember(dest => dest.ProductDocuments, opt => opt.MapFrom(src => src.ProductDocuments));
         }
     }
 }
